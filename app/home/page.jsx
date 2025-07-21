@@ -60,7 +60,7 @@ export default function HomePage() {
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
             Comprehensive preparation platform with coding practice, interview questions, 
-            company-specific resources, and mock tests.
+            company-specific resources, and mock tests. Every company specific questions
           </p>
           <div className="flex justify-center space-x-4">
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
