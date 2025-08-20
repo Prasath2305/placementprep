@@ -8,14 +8,6 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-black flex flex-col relative overflow-hidden">
       {/* Aurora Background */}
-      <div className="absolute inset-0 z-10">
-        <Aurora
-          colorStops={["#c026d3", "#9333ea", "#5b21b6"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={1.5}
-        />
-      </div>
       
       <Head>
         <title>Placement Interview Preparation Platform</title>

@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useAuth } from "@/context/AuthContext";
-import { doCreateUserWithEmailAndPassword, doSignInWithGoogle } from "@/lib/auth";
+import { useAuth } from "../../context/AuthContext";
+import { doCreateUserWithEmailAndPassword, doSignInWithGoogle } from "../../lib/auth.js";
 
 const Register = () => {
   const router = useRouter();
@@ -170,7 +170,7 @@ const Register = () => {
 
           <div className="text-sm text-center">
             Already have an account?{" "}
-            <Link href="/login" className="text-sm hover:underline font-bold">
+            <Link href="/sign-in" className="text-sm hover:underline font-bold">
               Continue
             </Link>
           </div>

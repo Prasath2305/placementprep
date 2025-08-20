@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { doSignInWithEmailAndPassword, doSignInWithGoogle } from "@/lib/auth";
-import { useAuth } from "@/context/AuthContext";
+import { doSignInWithEmailAndPassword, doSignInWithGoogle } from "../../lib/auth";
+import { useAuth } from "../../context/AuthContext";
 
 const Login = () => {
   const { userLoggedIn } = useAuth();

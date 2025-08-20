@@ -72,7 +72,7 @@ struct ColorStop {
 
 #define COLOR_RAMP(colors, factor, finalColor) {              \
   int index = 0;                                            \
-  for (int i = 0; i < 2; i++) {                               \
+  for ( int i = 0; i < 2; i++ ) {                               \
      ColorStop currentColor = colors[i];                    \
      bool isInBetween = currentColor.position <= factor;    \
      index = int(mix(float(index), float(i), float(isInBetween))); \
@@ -202,5 +202,17 @@ export default function Aurora(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [amplitude]);
 
-  return <div ref={ctnDom} className="w-full h-full" />;
+  return (
+    <div 
+      ref={ctnDom} 
+      className="w-full h-full"
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        zIndex: -9999, // Extremely low z-index to place it behind everything
+        pointerEvents: 'none' // Allow clicks to pass through
+      }} 
+    />
+  );
 }
